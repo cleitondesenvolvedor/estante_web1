@@ -82,14 +82,14 @@ nav {
   gap: 16px;
 }
 
-nav > a {
+nav>a {
   font-family: "Special Elite", system-ui;
   font-size: 24px;
   color: var(--preto);
   cursor: pointer;
 }
 
-nav > a:hover {
+nav>a:hover {
   background-color: var(--cor-primaria);
   color: var(--cor-tercearia);
 }
@@ -162,7 +162,8 @@ footer {
 #modal-cadastro,
 #modal-perfil,
 #modal-categorias,
-#modal-livros, .form-container {
+#modal-livros,
+.form-container {
   background-color: var(--cor-secundaria);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
@@ -195,9 +196,9 @@ footer {
   align-items: center;
 }
 
-#modal-login > form,
-#modal-cadastro > form,
-#modal-categorias > form {
+#modal-login>form,
+#modal-cadastro>form,
+#modal-categorias>form {
   margin-top: 15px;
 
   display: flex;
@@ -208,22 +209,24 @@ footer {
 
 .input-login,
 .input-cadastro,
-.input-perfil, #input-esqSenha {
+.input-perfil,
+#input-esqSenha {
   display: flex;
   flex-direction: column;
   width: 18.75rem;
   padding: 10px;
 }
 
-.input-login > label,
-.input-cadastro > label,
-.input-perfil > label {
+.input-login>label,
+.input-cadastro>label,
+.input-perfil>label {
   text-align: start;
 }
 
-.input-login > input,
-.input-cadastro > input,
-.input-perfil > input, #input-esqSenha > input {
+.input-login>input,
+.input-cadastro>input,
+.input-perfil>input,
+#input-esqSenha>input {
   height: 30px;
   background-color: var(--cor-tercearia);
   border: none;
@@ -231,16 +234,17 @@ footer {
   padding: 5px;
 }
 
-#modal-login > form > button,
-#modal-cadastro > form > button,
-#modal-perfil > form > button,
-#btn-perfil > button,
+#modal-login>form>button,
+#modal-cadastro>form>button,
+#modal-perfil>form>button,
+#btn-perfil>button,
 #add-categoria,
 #btn-add-categoria,
 #btn-edit-categoria,
 #add-livros,
-#form-addLivros > button,
-#form-editLivros > button, #input-esqSenha > button {
+#form-addLivros>button,
+#form-editLivros>button,
+#input-esqSenha>button {
   text-align: center;
   height: 30px;
   width: 9.375rem;
@@ -252,17 +256,17 @@ footer {
   border-radius: 10px;
 }
 
-#modal-login > form > button {
+#modal-login>form>button {
   margin-bottom: 25px;
 }
 
-#modal-login > form > h1,
+#modal-login>form>h1,
 p,
 a,
-#modal-cadastro > form > h1,
+#modal-cadastro>form>h1,
 p,
 a,
-#modal-perfil > form > h1,
+#modal-perfil>form>h1,
 p,
 a {
   font-family: Arial, Helvetica, sans-serif;
@@ -275,15 +279,15 @@ a {
   text-align: center;
 }
 
-#criar-conta > p {
+#criar-conta>p {
   margin: 0;
   font-size: 1rem;
   color: var(--cor-preto);
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#modal-login > form > p,
-#modal-cadastro > form > p {
+#modal-login>form>p,
+#modal-cadastro>form>p {
   margin: 1px;
 }
 
@@ -297,7 +301,7 @@ a {
   max-width: 400px;
 }
 
-.form-container > form {
+.form-container>form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -337,12 +341,12 @@ a {
   justify-content: center;
 }
 
-.foto > img {
+.foto>img {
   height: 200px;
   align-items: center;
 }
 
-#modal-perfil > form {
+#modal-perfil>form {
   text-align: center;
 }
 
@@ -370,16 +374,16 @@ a {
   font-family: "Special Elite", system-ui;
 }
 
-#btn-categorias > a,
-#btn-livros > a {
+#btn-categorias>a,
+#btn-livros>a {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
 }
 
-#btn-categorias > a:hover,
-#btn-livros > a:hover {
+#btn-categorias>a:hover,
+#btn-livros>a:hover {
   background-color: var(--cor-secundaria);
   height: 2.5rem;
 }
@@ -481,7 +485,7 @@ a {
   cursor: pointer;
 }
 
-#modal-categorias > form {
+#modal-categorias>form {
   margin: 0;
   height: 100%;
 }
@@ -549,8 +553,8 @@ a {
   position: relative;
 }
 
-.livro-favorito > img,
-.livro > img {
+.livro-favorito>img,
+.livro>img {
   height: 70%;
   width: 80%;
 }
@@ -578,7 +582,8 @@ a {
 .edit-livro-icon {
   background-color: var(--cor-tercearia);
 }
-#modal-livros > form {
+
+#modal-livros>form {
   height: 100%;
 }
 
@@ -620,12 +625,13 @@ a {
   font-family: "Special Elite", system-ui;
 }
 
-#input-add-livro > input[type="file"],
-#input-edit-livro > input[type="file"] {
+#input-add-livro>input[type="file"],
+#input-edit-livro>input[type="file"] {
   display: none;
 }
-#input-add-livro > label,
-#input-edit-livro > label {
+
+#input-add-livro>label,
+#input-edit-livro>label {
   background-color: var(--cor-tercearia);
   height: 100%;
   width: 90%;
@@ -662,18 +668,19 @@ a {
   height: 100%;
 }
 
-#form-addLivros > button,
-#form-editLivros > button {
+#form-addLivros>button,
+#form-editLivros>button {
   margin: 0;
   cursor: pointer;
   font-size: 1rem;
   width: 40%;
 }
 
-#form-addLivros > button:hover,
-#form-editLivros > button:hover {
+#form-addLivros>button:hover,
+#form-editLivros>button:hover {
   background-color: var(--cor-secundaria);
 }
+
 /* Estilizando o Contato */
 
 #contatos {
@@ -720,19 +727,59 @@ a {
   flex-direction: column;
 }
 
-#quem_somos > h1,
+#quem_somos>h1,
 p {
   margin: 24px auto;
 }
 
-#quem_somos > h1 {
+#quem_somos>h1 {
   background-color: var(--cor-primaria);
   width: 300px;
   padding: 4.8px;
   border-radius: 10px;
 }
 
-#quem_somos > p {
+#quem_somos>p {
   padding: 0 80px;
   font-size: 40px;
 }
+
+#btn-hamburguer {
+  display: none;
+}
+
+.aparecer {
+  display: flex !important;
+}
+
+@media screen and (max-width: 700px) {
+  conteudo-principal {
+    flex-direction: column;
+  }
+
+  #logo-busca {
+    padding: 10px;
+  }
+
+  #logo {
+    font-size: 1.5rem;
+  }
+
+  #busca {
+    max-width: 13rem;
+  }
+
+  #btn-hamburguer {
+    display: block;
+  }
+
+  #menu-nav {
+    display: none;
+  }
+
+  #menu-nav {
+    padding: 20px 0px;
+    flex-direction: column;
+  }
+}
+
